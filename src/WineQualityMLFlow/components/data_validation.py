@@ -8,6 +8,7 @@ from WineQualityMLFlow.entity.config_entity import DataValidationConfig
 class DataValidation:
     def __init__(self, config: DataValidationConfig):
         self.config = config
+        create_directories([self.config.root_dir])
     
     def validate_all_columns(self) -> bool:
         try:
@@ -17,7 +18,6 @@ class DataValidation:
             all_cols = list(data.columns)
 
             all_schema = self.config.all_schema.keys()
-            create_directories([self.config.root_dir])
             
             for col in all_cols:
                 if col not in all_schema:
