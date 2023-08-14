@@ -33,8 +33,10 @@ class ModelEvaluation:
         test_x = test_data.drop([self.config.target_column], axis=1)
         test_y = test_data[[self.config.target_column]]
 
+        print(self.config.mlflow_uri)
         mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        print(tracking_url_type_store)
 
         with mlflow.start_run():
             

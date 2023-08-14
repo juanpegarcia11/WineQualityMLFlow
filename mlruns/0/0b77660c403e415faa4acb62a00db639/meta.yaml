@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0b77660c403e415faa4acb62a00db639/artifacts
+end_time: 1692047889075
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0b77660c403e415faa4acb62a00db639
+run_name: treasured-gull-798
+run_uuid: 0b77660c403e415faa4acb62a00db639
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692047876032
+status: 4
+tags: []
+user_id: juanp

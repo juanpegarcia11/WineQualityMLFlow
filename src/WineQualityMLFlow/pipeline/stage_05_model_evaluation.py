@@ -1,3 +1,4 @@
+import os
 from WineQualityMLFlow.config.configuration import ConfigurationManager
 from WineQualityMLFlow.components.model_evaluation import ModelEvaluation
 from WineQualityMLFlow import logger
@@ -7,7 +8,9 @@ STAGE_NAME = "Model Evaluation Stage"
 
 class ModelEvaluationTrainingPipeline:
     def __init__(self):
-        pass
+        os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/juanpegarcia11/WineQualityMLFlow.mlflow"
+        os.environ["MLFLOW_TRACKING_USERNAME"]="juanpegarcia11"
+        os.environ["MLFLOW_TRACKING_PASSWORD"]="f23bd58860909feaf183020ef3f43ad3c1cef4e7"
 
     def main(self):
         config = ConfigurationManager()

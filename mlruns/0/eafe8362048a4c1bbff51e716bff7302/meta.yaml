@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/eafe8362048a4c1bbff51e716bff7302/artifacts
+end_time: 1692013506879
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eafe8362048a4c1bbff51e716bff7302
+run_name: silent-frog-307
+run_uuid: eafe8362048a4c1bbff51e716bff7302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692013500312
+status: 4
+tags: []
+user_id: juanp
